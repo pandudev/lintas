@@ -1,0 +1,359 @@
+.slider {
+  transform: translateY(80px);
+  margin-bottom: 80px;
+  width: 100%;
+  // height: 268px;
+  overflow: hidden;
+
+  @media ($desktop) {
+    transform: translateY(100px);
+    order: 1;
+    background-color: #fff;
+    width: 75%;
+    margin: 0 auto 120px auto;
+  }
+
+  &__banner {
+    width: 100%;
+  }
+
+  &__arrow {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    @media ($tablet-landscape) {
+      padding: 0 30px;
+    }
+
+    & > * {
+      width: 30px;
+      height: 30px;
+      fill: #fff;
+      cursor: pointer;
+
+      @media ($tablet-landscape) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__index {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    .indicator {
+      width: 35px;
+      height: 12px;
+      opacity: .5;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:not(:first-of-type) {
+        margin-left: 8px;
+      }
+
+      &--passive {
+        border: 2px solid #fff;
+        background-color: #fff;
+      }
+
+      &--active {
+        border: 2px solid #fff;
+        background-color: none;
+      }
+    }
+
+  }
+}
+
+.why {
+  position: relative;
+  background-color: #fff;
+  padding: 4rem 0;
+  color: var(--color-blue);
+
+  @media ($desktop) {
+      order: 3;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    @media ($desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+      text-align: justify;
+    }
+
+  &__icon {
+    position: relative;
+    z-index: 1;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      flex: 0 0 25%;
+
+      & > * {
+        width: 100%;
+      }
+    }
+  }
+
+  &::after {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    background-image: url("../../images/jakarta.png");
+    background-size: auto 20rem;
+    background-position: center center;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .3;
+
+    @media ($desktop) {
+      display: none;
+    }
+  }
+}
+
+.support {
+  width: 100%;
+  background: linear-gradient(to bottom right, var(--color-red), var(--color-dark-red));
+  position: relative;
+
+  @media ($desktop) {
+    order: 4;
+    background: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 70% );
+      background: linear-gradient(to bottom right, var(--color-red), var(--color-dark-red));
+      z-index: -1;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 50%;
+      bottom: 0;
+      clip-path: polygon(0 0, 100% 85%, 0 100% );
+      background: linear-gradient(to bottom right, var(--color-blue), var(--color-dark-blue));
+      z-index: -1;
+    }
+  }
+
+  @media ($large-display) {
+    width: 100%;
+    background: linear-gradient(to bottom right, var(--color-red), var(--color-dark-red));
+    position: relative;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  img {
+    height: 140px;
+    margin-right: 1.5rem;
+    position: relative;
+    transform: translateY(-25px);
+
+    @media ($desktop) {
+      height: 200px;
+    }
+
+    @media ($large-display) {
+      height: 140px;
+    }
+  }
+
+}
+
+.calculator {
+  padding: 4rem 0;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom right, var(--color-blue), var(--color-dark-blue));
+  color: #fff;
+
+   @media ($desktop) {
+      order: 2;
+    }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media ($tablet-landscape) {
+      flex-direction: row;
+    }
+  }
+
+  &__form {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & span {
+      margin-bottom: .8rem;
+      text-align: right;
+      flex:0;
+      padding-left: .5rem;
+      &:not(:last-of-type) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: '';
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(to bottom right, var(--color-red), var(--color-dark-red));
+  }
+
+  .separator {
+    flex: 0;
+    margin: 1rem 0;
+    opacity: .2;
+    border-color: #fff;
+  }
+}
+
+.partner {
+  height: 300px;
+  position: relative;
+  padding: 3rem 0;
+  color: var(--color-blue);
+  padding-bottom: 4rem;
+
+  @media ($desktop) {
+      order: 5;
+      height: 400px;
+    }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+
+  &__item-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > svg {
+      fill: var(--color-blue);
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+
+      @media ($tablet-landscape) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__logo {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+
+    @media ($tablet-landscape) {
+      justify-content: space-evenly;
+    }
+
+    @media ($desktop) {
+      justify-content: center;
+    }
+
+    & > img {
+      height: 120px;
+      width: 120px;
+
+      @media ($desktop) {
+        margin: 0 2rem;
+      }
+    }
+  }
+
+  &::after {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    background-image: url("../../images/sydney.png");
+    background-size: auto 20rem;
+    background-position: center center;
+    opacity: .3;
+
+    @media ($desktop) {
+      background-image: url("../../images/city.png");
+      background-size: cover;
+    }
+  }
+}
