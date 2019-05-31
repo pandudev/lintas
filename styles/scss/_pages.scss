@@ -70,12 +70,27 @@
     justify-content: space-between;
     margin-top: 2rem;
 
+    @media ($desktop) {
+      flex-direction: row;
+    }
+
     form {
       margin-bottom: 3rem;
+
+      @media ($desktop) {
+        flex-basis: 50%;
+        padding-right: .5rem;
+      }
     }
 
     &__div {
+      display: flex;
+      flex-direction: column;
       flex: 1;
+
+      @media ($desktop) {
+        padding-left: .5rem;
+      }
     }
 
     &__info {
@@ -100,7 +115,12 @@
     }
 
     &__map {
-      height: 20rem;
+      flex: 1;
+      height: 200px;
+
+      @media ($desktop) {
+        margin-bottom: 3rem;
+      }
 
       & > div {
         width: 100%;
