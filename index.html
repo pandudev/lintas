@@ -1,253 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LINTAS | Linking Indonesia to Australia</title>
+    <link rel="shortcut icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>LINTAS | Linking Indonesia to Australia</title>
-  <link rel="shortcut icon" href="favicon.png" />
-  <link rel="stylesheet" href="styles/css/main.css">
-</head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__wrapper">
+        <img
+          src="./images/lintas-logo.png"
+          alt="lintas logo"
+          class="header__brand-logo"
+        />
 
-<body>
+        <!-- NAVBAR -->
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="/index.html" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#"
+                >About
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="header__nav__submenu">
+                <li>
+                  <a href="/about.html">About Lintas</a>
+                </li>
+                <li>
+                  <a href="#">Why Lintas</a>
+                </li>
+                <li>
+                  <a href="#">General Introduction</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >How We Work
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="header__nav__submenu">
+                <li>
+                  <a href=" #">General Information</a>
+                </li>
+                <li>
+                  <a href="#">Indonesia to Australia</a>
+                </li>
+                <li>
+                  <a href="#">Australia to Indonesia</a>
+                </li>
+                <li>
+                  <a href="#">Payment Method</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >Services
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="header__nav__submenu">
+                <li>
+                  <a href=" #">E-Logistic</a>
+                </li>
+                <li>
+                  <a href="#">Concierge Service</a>
+                </li>
+                <li>
+                  <a href="#">Concierge Service++</a>
+                </li>
+                <li>
+                  <a href="#">Repack Service</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Document</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header__wrapper">
-      <img src="images/lintas-logo.png" alt="lintas logo" class="header__brand-logo">
+        <section class="header__language">
+          <img src="./images/indonesia-flag.png" alt="ID" />
+          <img src="./images/united-states-flag.png" alt="US" />
+        </section>
+        <svg class="header__hamburger">
+          <use xlink:href="images/icon.svg#icon-menu"></use>
+        </svg>
+      </div>
+    </header>
 
-      <!-- NAVBAR -->
-      <nav class="header__nav">
-        <ul>
-          <li>
-            <a href="index.html" class="active">Home</a></li>
-          <li>
-            <a href="#">About
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="header__nav__submenu">
-              <li>
-                <a href="about.html">About Lintas</a>
-              </li>
-              <li>
-                <a href="#">Why Lintas</a>
-              </li>
-              <li>
-                <a href="#">General Introduction</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">How We Work
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="header__nav__submenu">
-              <li>
-                <a href=" #">General Information</a>
-              </li>
-              <li>
-                <a href="#">Indonesia to Australia</a>
-              </li>
-              <li>
-                <a href="#">Australia to Indonesia</a>
-              </li>
-              <li>
-                <a href="#">Payment Method</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Services
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="header__nav__submenu">
-              <li>
-                <a href=" #">E-Logistic</a>
-              </li>
-              <li>
-                <a href="#">Concierge Service</a>
-              </li>
-              <li>
-                <a href="#">Concierge Service++</a>
-              </li>
-              <li>
-                <a href="#">Repack Service</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Document</a></li>
-          <li>
-            <a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <section class="header__language">
-        <img src="images/indonesia-flag.png" alt="ID">
-        <img src="images/united-states-flag.png" alt="US">
-      </section>
-      <svg class="header__hamburger">
-        <use xlink:href="images/icon.svg#icon-menu"></use>
-      </svg>
-    </div>
-  </header>
-
-  <!-- MOBILE NAV -->
-  <div class="mobile-nav">
-    <div class="container mobile-nav__wrapper">
-      <section class="mobile-nav__button">
-        <!-- <div class="mobile-nav__button-language">
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav">
+      <div class="container mobile-nav__wrapper">
+        <section class="mobile-nav__button">
+          <!-- <div class="mobile-nav__button-language">
           <a href="#">
-            <img src="images/indonesia-flag.png" alt="">
+            <img src="./images/indonesia-flag.png" alt="">
           </a>
           <a href="#">
-            <img src="images/united-states-flag.png" alt="">
+            <img src="./images/united-states-flag.png" alt="">
           </a>
         </div> -->
-        <div class="mobile-nav__button-close">
-          <svg class="nav-close">
-            <use xlink:href="images/icon.svg#icon-cross"></use>
-          </svg>
+          <div class="mobile-nav__button-close">
+            <svg class="nav-close">
+              <use xlink:href="./images/icon.svg#icon-cross"></use>
+            </svg>
+          </div>
+        </section>
+        <section class="mobile-nav__list">
+          <ul class="mobile-nav__list__menu">
+            <li>
+              <a href="/index.html" class="mobile-link active">Home</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-link"
+                >About
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="list__submenu">
+                <li>
+                  <a href="/about.html">About Lintas</a>
+                </li>
+                <li>
+                  <a href="#">Why Lintas</a>
+                </li>
+                <li>
+                  <a href="#">General Introduction</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="mobile-link"
+                >How We Work
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="list__submenu">
+                <li>
+                  <a href=" #">General Information</a>
+                </li>
+                <li>
+                  <a href="#">Indonesia to Australia</a>
+                </li>
+                <li>
+                  <a href="#">Australia to Indonesia</a>
+                </li>
+                <li>
+                  <a href="#">Payment Method</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="mobile-link"
+                >Services
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="list__submenu">
+                <li>
+                  <a href=" #">E-Logistic</a>
+                </li>
+                <li>
+                  <a href="#">Concierge Service</a>
+                </li>
+                <li>
+                  <a href="#">Concierge Service++</a>
+                </li>
+                <li>
+                  <a href="#">Repack Service</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="mobile-link">Document</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-link">Tracking</a>
+            </li>
+            <li>
+              <a href="/contact.html" class="mobile-link">Contact Us</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="slider">
+      <div class="slider__slide">
+        <div class="slider__slide-item">
+          <img
+            src="./images/banner-1.png"
+            alt="banner 3"
+            class="slider__banner"
+          />
         </div>
-      </section>
-      <section class="mobile-nav__list">
-        <ul class="mobile-nav__list__menu">
-          <li>
-            <a href="/index.html" class="mobile-link active">Home</a>
-          </li>
-          <li>
-            <a href="#" class="mobile-link">About
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="list__submenu">
-              <li>
-                <a href="/about.html">About Lintas</a>
-              </li>
-              <li>
-                <a href="#">Why Lintas</a>
-              </li>
-              <li>
-                <a href="#">General Introduction</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="mobile-link">How We Work
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="list__submenu">
-              <li>
-                <a href=" #">General Information</a>
-              </li>
-              <li>
-                <a href="#">Indonesia to Australia</a>
-              </li>
-              <li>
-                <a href="#">Australia to Indonesia</a>
-              </li>
-              <li>
-                <a href="#">Payment Method</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="mobile-link">Services
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="list__submenu">
-              <li>
-                <a href=" #">E-Logistic</a>
-              </li>
-              <li>
-                <a href="#">Concierge Service</a>
-              </li>
-              <li>
-                <a href="#">Concierge Service++</a>
-              </li>
-              <li>
-                <a href="#">Repack Service</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="mobile-link">Document</a>
-          </li>
-          <li>
-            <a href="#" class="mobile-link">Tracking</a>
-          </li>
-          <li>
-            <a href="/contact.html" class="mobile-link">Contact Us</a>
-          </li>
-        </ul>
-      </section>
-    </div>
-  </div>
+      </div>
+      <div class="slider__slide">
+        <div class="slider__slide-item">
+          <img
+            src="./images/banner-2.png"
+            alt="banner 3"
+            class="slider__banner"
+          />
+        </div>
+      </div>
+      <div class="slider__slide">
+        <div class="slider__slide-item">
+          <img
+            src="./images/banner-3.png"
+            alt="banner 3"
+            class="slider__banner"
+          />
+        </div>
+      </div>
+      <div class="slider__slide">
+        <div class="slider__slide-item">
+          <img
+            src="./images/banner-4.png"
+            alt="banner 3"
+            class="slider__banner"
+          />
+        </div>
+      </div>
+      <div class="slider__slide">
+        <div class="slider__slide-item">
+          <img
+            src="./images/banner-5.png"
+            alt="banner 3"
+            class="slider__banner"
+          />
+        </div>
+      </div>
+      <div class="slider__slide">
+        <div class="slider__slide-item">
+          <img
+            src="./images/banner-6.png"
+            alt="banner 3"
+            class="slider__banner"
+          />
+        </div>
+      </div>
+      <div class="slider__slide">
+        <div class="slider__slide-item">
+          <img
+            src="./images/banner-7.png"
+            alt="banner 3"
+            class="slider__banner"
+          />
+        </div>
+      </div>
+      <div class="slider__slide">
+        <div class="slider__slide-item">
+          <img
+            src="./images/banner-8.png"
+            alt="banner 3"
+            class="slider__banner"
+          />
+        </div>
+      </div>
 
-  <!-- SLIDER -->
-  <div class="slider">
-    <div class="slider__slide">
-      <div class="slider__slide-item">
-        <img src="images/banner-1.png" alt="banner 3" class="slider__banner">
-      </div>
-    </div>
-    <div class="slider__slide">
-      <div class="slider__slide-item">
-        <img src="images/banner-2.png" alt="banner 3" class="slider__banner">
-      </div>
-    </div>
-    <div class="slider__slide">
-      <div class="slider__slide-item">
-        <img src="images/banner-3.png" alt="banner 3" class="slider__banner">
-      </div>
-    </div>
-    <div class="slider__slide">
-      <div class="slider__slide-item">
-        <img src="images/banner-4.png" alt="banner 3" class="slider__banner">
-      </div>
-    </div>
-    <div class="slider__slide">
-      <div class="slider__slide-item">
-        <img src="images/banner-5.png" alt="banner 3" class="slider__banner">
-      </div>
-    </div>
-    <div class="slider__slide">
-      <div class="slider__slide-item">
-        <img src="images/banner-6.png" alt="banner 3" class="slider__banner">
-      </div>
-    </div>
-    <div class="slider__slide">
-      <div class="slider__slide-item">
-        <img src="images/banner-7.png" alt="banner 3" class="slider__banner">
-      </div>
-    </div>
-    <div class="slider__slide">
-      <div class="slider__slide-item">
-        <img src="images/banner-8.png" alt="banner 3" class="slider__banner">
-      </div>
-    </div>
-
-    <section class="slider__arrow">
-      <svg class="slider__prev">
-        <use xlink:href="images/icon.svg#icon-chevron-thin-left"></use>
-      </svg>
-      <svg class="slider__next">
-        <use xlink:href="images/icon.svg#icon-chevron-thin-right"></use>
-      </svg>
-    </section>
-    <!-- <section class="slider__index">
+      <section class="slider__arrow">
+        <svg class="slider__prev">
+          <use xlink:href="./images/icon.svg#icon-chevron-thin-left"></use>
+        </svg>
+        <svg class="slider__next">
+          <use xlink:href="./images/icon.svg#icon-chevron-thin-right"></use>
+        </svg>
+      </section>
+      <!-- <section class="slider__index">
       <div class="indicator indicator--passive"></div>
       <div class="indicator indicator--active"></div>
       <div class="indicator indicator--passive"></div>
@@ -255,227 +298,246 @@
       <div class="indicator indicator--passive"></div>
       <div class="indicator indicator--passive"></div>
     </section> -->
-  </div>
-
-  <!-- WHY LINTAS -->
-  <div class="why">
-    <div class="container why__wrapper">
-      <h1>Why Lintas</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus inventore necessitatibus dolor quidem
-        neque doloremque architecto impedit, perferendis dolorum ea ipsum ipsa consequuntur exercitationem. Quidem
-        provident repellendus beatae dicta explicabo?</p>
-      <section class="why__icon">
-        <div class="why__icon__item"><img src="images/why-1.png" alt="why 1"></div>
-        <div class="why__icon__item"><img src="images/why-2.png" alt="why 2"></div>
-        <div class="why__icon__item"><img src="images/why-3.png" alt="why 3"></div>
-        <div class="why__icon__item"><img src="images/why-4.png" alt="why 4"></div>
-        <div class="why__icon__item"><img src="images/why-5.png" alt="why 5"></div>
-        <div class="why__icon__item"><img src="images/why-6.png" alt="why 6"></div>
-        <div class="why__icon__item"><img src="images/why-7.png" alt="why 7"></div>
-      </section>
     </div>
-  </div>
 
-  <!-- CALL CENTER -->
-  <div class="support">
-    <div class="container support__wrapper">
-      <img src="images/call-center.png" alt="call center">
-      <section class="support__text">
-        <h1>Need Our Support?</h1>
-        <h2>Hotline : 0821-2323-3456</h2>
-        <h2>cs@lintas.com</h2>
-      </section>
+    <!-- WHY LINTAS -->
+    <div class="why">
+      <div class="container why__wrapper">
+        <h1>Why Lintas</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+          inventore necessitatibus dolor quidem neque doloremque architecto
+          impedit, perferendis dolorum ea ipsum ipsa consequuntur
+          exercitationem. Quidem provident repellendus beatae dicta explicabo?
+        </p>
+        <section class="why__icon">
+          <div class="why__icon__item">
+            <img src="./images/why-1.png" alt="why 1" />
+          </div>
+          <div class="why__icon__item">
+            <img src="./images/why-2.png" alt="why 2" />
+          </div>
+          <div class="why__icon__item">
+            <img src="./images/why-3.png" alt="why 3" />
+          </div>
+          <div class="why__icon__item">
+            <img src="./images/why-4.png" alt="why 4" />
+          </div>
+          <div class="why__icon__item">
+            <img src="./images/why-5.png" alt="why 5" />
+          </div>
+          <div class="why__icon__item">
+            <img src="./images/why-6.png" alt="why 6" />
+          </div>
+          <div class="why__icon__item">
+            <img src="./images/why-7.png" alt="why 7" />
+          </div>
+        </section>
+      </div>
     </div>
-    <!-- <div class="support__wrapper-pop">
-      <img src="images/call-center.png" alt="call center">
+
+    <!-- CALL CENTER -->
+    <div class="support">
+      <div class="container support__wrapper">
+        <img src="./images/call-center.png" alt="call center" />
+        <section class="support__text">
+          <h1>Need Our Support?</h1>
+          <h2>Hotline : 0821-2323-3456</h2>
+          <h2>cs@lintas.com</h2>
+        </section>
+      </div>
+      <!-- <div class="support__wrapper-pop">
+      <img src="./images/call-center.png" alt="call center">
       <section class="support__text">
         <h1>Need Our Support?</h1>
         <h2>Hotline : 0821-2323-3456</h2>
         <h2>cs@lintas.com</h2>
       </section>
     </div> -->
-  </div>
-
-  <!-- CALCULATOR -->
-  <div class="calculator">
-    <div class="container calculator__wrapper">
-      <section class="calculator__form">
-        <h1>Cek Tarif</h1>
-        <form action="#" class="form">
-          <div class="form-group">
-            <label for="aud">AUD</label>
-            <input type="text" id="aud" name="aud" placeholder="00.0">
-          </div>
-          <div class="form-group">
-            <label for="usd">USD</label>
-            <input type="text" id="usd" name="usd" placeholder="00.0">
-          </div>
-          <div class="form-group">
-            <label for="fob">FOB (AUD)</label>
-            <input type="text" id="fob" name="fob" placeholder="00.0">
-          </div>
-          <div class="form-group">
-            <label for="weight">berat</label>
-            <input type="text" id="weight" name="weight" placeholder="00.0">
-            <span>kg</span>
-          </div>
-          <div class="form-group">
-            <label for="dimension">dimensi</label>
-            <div class="input-group">
-              <input type="text" placeholder="L">
-              <span>cm</span>
-              <input type="text" placeholder="W">
-              <span>cm</span>
-              <input type="text" placeholder="H">
-              <span>cm</span>
-            </div>
-          </div>
-          <button class="btn btn--accent">Cek Ongkos Kirim</button>
-        </form>
-      </section>
-      <hr class="separator">
-      <section class="calculator__form">
-        <h1>Cek Berat</h1>
-        <form action="#" class="form">
-          <div class="form-group">
-            <label for="weight">berat</label>
-            <input type="text" id="weight" name="weight" placeholder="00.0">
-            <span>kg</span>
-          </div>
-          <div class="form-group">
-            <label for="dimension">dimensi</label>
-            <div class="input-group">
-              <input type="text" placeholder="L">
-              <span>cm</span>
-              <input type="text" placeholder="W">
-              <span>cm</span>
-              <input type="text" placeholder="H">
-              <span>cm</span>
-            </div>
-          </div>
-          <button class="btn btn--accent">Cek Berat</button>
-        </form>
-      </section>
     </div>
-  </div>
 
-  <!-- PARTNER -->
-  <div class="partner">
-    <div class="container partner__wrapper">
-      <h1>Partners</h1>
-      <div class="partner__item-wrapper">
-        <svg>
-          <use xlink:href="images/icon.svg#icon-chevron-thin-left"></use>
-        </svg>
-        <section class="partner__logo">
-          <img src="images/partner-logo.png" alt="partner logo">
-          <img src="images/partner-logo.png" alt="partner logo">
-          <img src="images/partner-logo.png" alt="partner logo">
+    <!-- CALCULATOR -->
+    <div class="calculator">
+      <div class="container calculator__wrapper">
+        <section class="calculator__form">
+          <h1>Cek Tarif</h1>
+          <form action="#" class="form">
+            <div class="form-group">
+              <label for="aud">AUD</label>
+              <input type="text" id="aud" name="aud" placeholder="00.0" />
+            </div>
+            <div class="form-group">
+              <label for="usd">USD</label>
+              <input type="text" id="usd" name="usd" placeholder="00.0" />
+            </div>
+            <div class="form-group">
+              <label for="fob">FOB (AUD)</label>
+              <input type="text" id="fob" name="fob" placeholder="00.0" />
+            </div>
+            <div class="form-group">
+              <label for="weight">berat</label>
+              <input type="text" id="weight" name="weight" placeholder="00.0" />
+              <span>kg</span>
+            </div>
+            <div class="form-group">
+              <label for="dimension">dimensi</label>
+              <div class="input-group">
+                <input type="text" placeholder="L" />
+                <span>cm</span>
+                <input type="text" placeholder="W" />
+                <span>cm</span>
+                <input type="text" placeholder="H" />
+                <span>cm</span>
+              </div>
+            </div>
+            <button class="btn btn--accent">Cek Ongkos Kirim</button>
+          </form>
         </section>
-        <svg>
-          <use xlink:href="images/icon.svg#icon-chevron-thin-right"></use>
-        </svg>
+        <hr class="separator" />
+        <section class="calculator__form">
+          <h1>Cek Berat</h1>
+          <form action="#" class="form">
+            <div class="form-group">
+              <label for="weight">berat</label>
+              <input type="text" id="weight" name="weight" placeholder="00.0" />
+              <span>kg</span>
+            </div>
+            <div class="form-group">
+              <label for="dimension">dimensi</label>
+              <div class="input-group">
+                <input type="text" placeholder="L" />
+                <span>cm</span>
+                <input type="text" placeholder="W" />
+                <span>cm</span>
+                <input type="text" placeholder="H" />
+                <span>cm</span>
+              </div>
+            </div>
+            <button class="btn btn--accent">Cek Berat</button>
+          </form>
+        </section>
       </div>
     </div>
-  </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__wrapper">
-      <section class="footer__link">
-        <div class="footer__link__item information">
-          <h2>Informasi</h2>
-          <div><a href="#">FAQ</a></div>
-          <div><a href="#">Kode Status Pengantaran Paket</a></div>
-          <div><a href="#">Ketentuan & Kondisi</a></div>
-          <div><a href="#">Kebijakan Privasi</a></div>
+    <!-- PARTNER -->
+    <div class="partner">
+      <div class="container partner__wrapper">
+        <h1>Partners</h1>
+        <div class="partner__item-wrapper">
+          <svg>
+            <use xlink:href="./images/icon.svg#icon-chevron-thin-left"></use>
+          </svg>
+          <section class="partner__logo">
+            <img src="./images/partner-logo.png" alt="partner logo" />
+            <img src="./images/partner-logo.png" alt="partner logo" />
+            <img src="./images/partner-logo.png" alt="partner logo" />
+          </section>
+          <svg>
+            <use xlink:href="./images/icon.svg#icon-chevron-thin-right"></use>
+          </svg>
         </div>
-        <div class="footer__link__item follow-us">
-          <h2>Ikuti Kami</h2>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-facebook"></use>
-              </svg>
-              <span>Facebook</span>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-twitter"></use>
-              </svg>
-              <span>Twitter</span>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-instagram"></use>
-              </svg>
-              <span>Instagram</span>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-youtube"></use>
-              </svg>
-              <span>Youtube</span>
-            </a>
-          </div>
-        </div>
-        <div class="footer__link__item contact-info">
-          <h2>Info Kontak</h2>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-location"></use>
-              </svg>
-              <span>Jl. Ahmad Yani</span>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-phone"></use>
-              </svg>
-              <span>0821-1232-3323</span>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-mail"></use>
-              </svg>
-              <span>cs@lintas.com</span>
-            </a>
-          </div>
-        </div>
-        <div class="footer__link__item download-app">
-          <h2>Download App</h2>
-          <div>
-            <div><a href="#">
-                <img src="images/google-play.png" alt="download android">
-              </a></div>
-            <div><a href="#">
-                <img src="images/app-store.png" alt="download iOS">
-              </a></div>
-          </div>
-        </div>
-      </section>
-      <hr class="footer__separator">
-      <section class="footer__copyright">
-        <p>Copyright &copy; 2019 PT. Lintas. All Rights Reserved.</p>
-      </section>
+      </div>
     </div>
-  </footer>
 
-  <!-- SCRIPT -->
-  <script src="scripts/jquery.js"></script>
-  <script src="scripts/main.js"></script>
-  <script src="scripts/carousel.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <section class="footer__link">
+          <div class="footer__link__item information">
+            <h2>Informasi</h2>
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#">Kode Status Pengantaran Paket</a></div>
+            <div><a href="#">Ketentuan & Kondisi</a></div>
+            <div><a href="#">Kebijakan Privasi</a></div>
+          </div>
+          <div class="footer__link__item follow-us">
+            <h2>Ikuti Kami</h2>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-facebook"></use>
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-twitter"></use>
+                </svg>
+                <span>Twitter</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-instagram"></use>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-youtube"></use>
+                </svg>
+                <span>Youtube</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer__link__item contact-info">
+            <h2>Info Kontak</h2>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-location"></use>
+                </svg>
+                <span>Jl. Ahmad Yani</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-phone"></use>
+                </svg>
+                <span>0821-1232-3323</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="./images/icon.svg#icon-mail"></use>
+                </svg>
+                <span>cs@lintas.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer__link__item download-app">
+            <h2>Download App</h2>
+            <div>
+              <div>
+                <a href="#">
+                  <img src="./images/google-play.png" alt="download android" />
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="./images/app-store.png" alt="download iOS" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="footer__separator" />
+        <section class="footer__copyright">
+          <p>Copyright &copy; 2019 PT. Lintas. All Rights Reserved.</p>
+        </section>
+      </div>
+    </footer>
 
-</body>
-
+    <!-- SCRIPT -->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/carousel.js"></script>
+  </body>
 </html>
