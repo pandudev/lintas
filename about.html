@@ -1,109 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LINTAS | Linking Indonesia to Australia</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>LINTAS | Linking Indonesia to Australia</title>
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" href="styles/css/main.css">
-</head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__wrapper">
+        <img
+          src="images/lintas-logo.png"
+          alt="lintas logo"
+          class="header__brand-logo"
+        />
 
-<body>
+        <!-- NAVBAR -->
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="./index.html" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#"
+                >About
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="header__nav__submenu">
+                <li>
+                  <a href="./about.html">About Lintas</a>
+                </li>
+                <li>
+                  <a href="#">Why Lintas</a>
+                </li>
+                <li>
+                  <a href="#">General Introduction</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >How We Work
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="header__nav__submenu">
+                <li>
+                  <a href=" #">General Information</a>
+                </li>
+                <li>
+                  <a href="#">Indonesia to Australia</a>
+                </li>
+                <li>
+                  <a href="#">Australia to Indonesia</a>
+                </li>
+                <li>
+                  <a href="#">Payment Method</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                >Services
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="header__nav__submenu">
+                <li>
+                  <a href=" #">E-Logistic</a>
+                </li>
+                <li>
+                  <a href="#">Concierge Service</a>
+                </li>
+                <li>
+                  <a href="#">Concierge Service++</a>
+                </li>
+                <li>
+                  <a href="#">Repack Service</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Document</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header__wrapper">
-      <img src="images/lintas-logo.png" alt="lintas logo" class="header__brand-logo">
+        <section class="header__language">
+          <img src="images/indonesia-flag.png" alt="ID" />
+          <img src="images/united-states-flag.png" alt="US" />
+        </section>
+        <svg class="header__hamburger">
+          <use xlink:href="images/icon.svg#icon-menu"></use>
+        </svg>
+      </div>
+    </header>
 
-      <!-- NAVBAR -->
-      <nav class="header__nav">
-        <ul>
-          <li>
-            <a href="/index.html" class="active">Home</a></li>
-          <li>
-            <a href="#">About
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="header__nav__submenu">
-              <li>
-                <a href="/about.html">About Lintas</a>
-              </li>
-              <li>
-                <a href="#">Why Lintas</a>
-              </li>
-              <li>
-                <a href="#">General Introduction</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">How We Work
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="header__nav__submenu">
-              <li>
-                <a href=" #">General Information</a>
-              </li>
-              <li>
-                <a href="#">Indonesia to Australia</a>
-              </li>
-              <li>
-                <a href="#">Australia to Indonesia</a>
-              </li>
-              <li>
-                <a href="#">Payment Method</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Services
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="header__nav__submenu">
-              <li>
-                <a href=" #">E-Logistic</a>
-              </li>
-              <li>
-                <a href="#">Concierge Service</a>
-              </li>
-              <li>
-                <a href="#">Concierge Service++</a>
-              </li>
-              <li>
-                <a href="#">Repack Service</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Document</a></li>
-          <li>
-            <a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <section class="header__language">
-        <img src="images/indonesia-flag.png" alt="ID">
-        <img src="images/united-states-flag.png" alt="US">
-      </section>
-      <svg class="header__hamburger">
-        <use xlink:href="images/icon.svg#icon-menu"></use>
-      </svg>
-    </div>
-  </header>
-
-  <!-- MOBILE NAV -->
-  <div class="mobile-nav">
-    <div class="container mobile-nav__wrapper">
-      <section class="mobile-nav__button">
-        <!-- <div class="mobile-nav__button-language">
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav">
+      <div class="container mobile-nav__wrapper">
+        <section class="mobile-nav__button">
+          <!-- <div class="mobile-nav__button-language">
               <a href="#">
                 <img src="images/indonesia-flag.png" alt="">
               </a>
@@ -111,248 +119,293 @@
                 <img src="images/united-states-flag.png" alt="">
               </a>
             </div> -->
-        <div class="mobile-nav__button-close">
-          <svg class="nav-close">
-            <use xlink:href="images/icon.svg#icon-cross"></use>
-          </svg>
-        </div>
-      </section>
-      <section class="mobile-nav__list">
-        <ul class="mobile-nav__list__menu">
-          <li>
-            <a href="/index.html" class="mobile-link active">Home</a>
-          </li>
-          <li>
-            <a href="#" class="mobile-link">About
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="list__submenu">
-              <li>
-                <a href="/about.html">About Lintas</a>
-              </li>
-              <li>
-                <a href="#">Why Lintas</a>
-              </li>
-              <li>
-                <a href="#">General Introduction</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="mobile-link">How We Work
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="list__submenu">
-              <li>
-                <a href=" #">General Information</a>
-              </li>
-              <li>
-                <a href="#">Indonesia to Australia</a>
-              </li>
-              <li>
-                <a href="#">Australia to Indonesia</a>
-              </li>
-              <li>
-                <a href="#">Payment Method</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="mobile-link">Services
-              <svg>
-                <use xlink:href="images/icon.svg#icon-triangle-down"></use>
-              </svg>
-            </a>
-            <ul class="list__submenu">
-              <li>
-                <a href=" #">E-Logistic</a>
-              </li>
-              <li>
-                <a href="#">Concierge Service</a>
-              </li>
-              <li>
-                <a href="#">Concierge Service++</a>
-              </li>
-              <li>
-                <a href="#">Repack Service</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="mobile-link">Document</a>
-          </li>
-          <li>
-            <a href="#" class="mobile-link">Tracking</a>
-          </li>
-          <li>
-            <a href="/contact.html" class="mobile-link">Contact Us</a>
-          </li>
+          <div class="mobile-nav__button-close">
+            <svg class="nav-close">
+              <use xlink:href="images/icon.svg#icon-cross"></use>
+            </svg>
+          </div>
+        </section>
+        <section class="mobile-nav__list">
+          <ul class="mobile-nav__list__menu">
+            <li>
+              <a href="./index.html" class="mobile-link active">Home</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-link"
+                >About
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="list__submenu">
+                <li>
+                  <a href="./about.html">About Lintas</a>
+                </li>
+                <li>
+                  <a href="#">Why Lintas</a>
+                </li>
+                <li>
+                  <a href="#">General Introduction</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="mobile-link"
+                >How We Work
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="list__submenu">
+                <li>
+                  <a href=" #">General Information</a>
+                </li>
+                <li>
+                  <a href="#">Indonesia to Australia</a>
+                </li>
+                <li>
+                  <a href="#">Australia to Indonesia</a>
+                </li>
+                <li>
+                  <a href="#">Payment Method</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="mobile-link"
+                >Services
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-triangle-down"></use>
+                </svg>
+              </a>
+              <ul class="list__submenu">
+                <li>
+                  <a href=" #">E-Logistic</a>
+                </li>
+                <li>
+                  <a href="#">Concierge Service</a>
+                </li>
+                <li>
+                  <a href="#">Concierge Service++</a>
+                </li>
+                <li>
+                  <a href="#">Repack Service</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="mobile-link">Document</a>
+            </li>
+            <li>
+              <a href="#" class="mobile-link">Tracking</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="mobile-link">Contact Us</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      <div class="container">
+        <h1>About Lintas</h1>
+        <h2>heading 2</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est suscipit
+          fuga, accusantium adipisci architecto cum placeat consequatur dolorum
+          voluptatem? Beatae quidem perspiciatis vero eligendi est nam, ea
+          voluptates corporis? Porro.
+        </p>
+        <h2>heading 2</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi ipsam
+          fugiat pariatur. Consectetur, beatae pariatur! Dolorum, sed, aut,
+          aspernatur officiis optio quos consequatur id sint veritatis a
+          accusamus magnam velit!
+        </p>
+        <ul>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
+          <li><a href="#">link</a></li>
         </ul>
-      </section>
-    </div>
-  </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+          aliquam delectus nihil veritatis dignissimos sit perferendis similique
+          optio amet deleniti repudiandae itaque doloribus recusandae aliquid
+          explicabo ullam distinctio natus error?
+        </p>
+        <ol>
+          <li>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
+            doloremque iusto reprehenderit aut, deleniti nostrum illo
+            praesentium harum odit dolorem minima placeat dolores eveniet ipsum
+            eaque quia quae assumenda officia.
+          </li>
+          <li>
+            Omnis, totam reprehenderit voluptatem delectus debitis eum
+            architecto sapiente quae dolorum nulla, autem odio illum
+            perspiciatis officiis quibusdam. Unde doloribus ducimus perferendis
+            similique neque repellendus libero ab quo ad corporis.
+          </li>
+          <li>
+            Ipsum beatae architecto eos, est aspernatur aut quidem animi
+            recusandae, perferendis incidunt ipsam facere, explicabo debitis
+            impedit quis corrupti eveniet deleniti facilis odit minima enim
+            molestias quaerat aliquam. Deserunt, fuga.
+          </li>
+          <li>
+            Quisquam expedita eius aspernatur officia, delectus vitae quas
+            officiis, minima autem suscipit voluptatum tenetur, nobis nihil sint
+            reprehenderit voluptas aliquid incidunt! Ex architecto temporibus
+            obcaecati rerum a blanditiis veniam quae!
+          </li>
+          <li>
+            Et odit deleniti distinctio ipsa quod velit nihil eos tenetur totam
+            rem, soluta, ipsum error dolores laudantium debitis pariatur
+            sapiente obcaecati eaque officiis beatae nesciunt? Fugit quas
+            voluptatibus aspernatur velit!
+          </li>
+          <li>
+            Eos cum magni ut ullam? Quo excepturi blanditiis totam itaque
+            delectus rem, vitae, cum, beatae deserunt amet doloremque architecto
+            soluta at laborum aspernatur? Quae obcaecati, vel voluptate laborum
+            odit rerum!
+          </li>
+          <li>
+            Saepe numquam quod repudiandae beatae eveniet culpa cum
+            reprehenderit. Dignissimos illum asperiores, dolore consequuntur
+            facilis quam totam libero vitae sequi nostrum explicabo porro
+            eveniet? Repudiandae vitae quisquam tenetur pariatur dolore!
+          </li>
+          <li>
+            Distinctio tenetur maxime ipsa ipsam, impedit pariatur cum nam ad
+            porro asperiores veniam corrupti blanditiis aliquam autem totam,
+            inventore officia. Sequi veniam, porro nam est nulla hic iure?
+            Vitae, tempora!
+          </li>
+          <li>
+            Minus fuga perspiciatis ex enim vel maiores placeat voluptatem velit
+            provident nisi aspernatur dolorem asperiores itaque iste fugiat
+            tempore earum deleniti, ad doloribus voluptates at sunt, eligendi
+            similique inventore. Voluptatum.
+          </li>
+          <li>
+            A magni excepturi voluptates, eos nisi obcaecati officiis nobis id
+            dolore omnis doloribus, veritatis hic, voluptatum provident aliquam
+            accusantium possimus illum maiores sunt. Error dolor, voluptatum
+            tenetur obcaecati veritatis veniam!
+          </li>
+        </ol>
+      </div>
+    </main>
 
-  <!-- MAIN CONTENT -->
-  <main class="content">
-    <div class="container">
-      <h1>About Lintas</h1>
-      <h2>heading 2</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est suscipit fuga, accusantium adipisci architecto
-        cum placeat consequatur dolorum voluptatem? Beatae quidem perspiciatis vero eligendi est nam, ea voluptates
-        corporis? Porro.</p>
-      <h2>heading 2</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi ipsam fugiat pariatur. Consectetur, beatae
-        pariatur! Dolorum, sed, aut, aspernatur officiis optio quos consequatur id sint veritatis a accusamus magnam
-        velit!</p>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aliquam delectus nihil veritatis dignissimos
-        sit perferendis similique optio amet deleniti repudiandae itaque doloribus recusandae aliquid explicabo ullam
-        distinctio natus error?</p>
-      <ol>
-        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab doloremque iusto reprehenderit aut, deleniti
-          nostrum illo praesentium harum odit dolorem minima placeat dolores eveniet ipsum eaque quia quae assumenda
-          officia.</li>
-        <li>Omnis, totam reprehenderit voluptatem delectus debitis eum architecto sapiente quae dolorum nulla, autem
-          odio illum perspiciatis officiis quibusdam. Unde doloribus ducimus perferendis similique neque repellendus
-          libero ab quo ad corporis.</li>
-        <li>Ipsum beatae architecto eos, est aspernatur aut quidem animi recusandae, perferendis incidunt ipsam facere,
-          explicabo debitis impedit quis corrupti eveniet deleniti facilis odit minima enim molestias quaerat aliquam.
-          Deserunt, fuga.</li>
-        <li>Quisquam expedita eius aspernatur officia, delectus vitae quas officiis, minima autem suscipit voluptatum
-          tenetur, nobis nihil sint reprehenderit voluptas aliquid incidunt! Ex architecto temporibus obcaecati rerum a
-          blanditiis veniam quae!</li>
-        <li>Et odit deleniti distinctio ipsa quod velit nihil eos tenetur totam rem, soluta, ipsum error dolores
-          laudantium debitis pariatur sapiente obcaecati eaque officiis beatae nesciunt? Fugit quas voluptatibus
-          aspernatur velit!</li>
-        <li>Eos cum magni ut ullam? Quo excepturi blanditiis totam itaque delectus rem, vitae, cum, beatae deserunt amet
-          doloremque architecto soluta at laborum aspernatur? Quae obcaecati, vel voluptate laborum odit rerum!</li>
-        <li>Saepe numquam quod repudiandae beatae eveniet culpa cum reprehenderit. Dignissimos illum asperiores, dolore
-          consequuntur facilis quam totam libero vitae sequi nostrum explicabo porro eveniet? Repudiandae vitae quisquam
-          tenetur pariatur dolore!</li>
-        <li>Distinctio tenetur maxime ipsa ipsam, impedit pariatur cum nam ad porro asperiores veniam corrupti
-          blanditiis aliquam autem totam, inventore officia. Sequi veniam, porro nam est nulla hic iure? Vitae, tempora!
-        </li>
-        <li>Minus fuga perspiciatis ex enim vel maiores placeat voluptatem velit provident nisi aspernatur dolorem
-          asperiores itaque iste fugiat tempore earum deleniti, ad doloribus voluptates at sunt, eligendi similique
-          inventore. Voluptatum.</li>
-        <li>A magni excepturi voluptates, eos nisi obcaecati officiis nobis id dolore omnis doloribus, veritatis hic,
-          voluptatum provident aliquam accusantium possimus illum maiores sunt. Error dolor, voluptatum tenetur
-          obcaecati veritatis veniam!</li>
-      </ol>
-    </div>
-  </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <section class="footer__link">
+          <div class="footer__link__item information">
+            <h2>Informasi</h2>
+            <div><a href="#">FAQ</a></div>
+            <div><a href="#">Kode Status Pengantaran Paket</a></div>
+            <div><a href="#">Ketentuan & Kondisi</a></div>
+            <div><a href="#">Kebijakan Privasi</a></div>
+          </div>
+          <div class="footer__link__item follow-us">
+            <h2>Ikuti Kami</h2>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-facebook"></use>
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-twitter"></use>
+                </svg>
+                <span>Twitter</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-instagram"></use>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-youtube"></use>
+                </svg>
+                <span>Youtube</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer__link__item contact-info">
+            <h2>Info Kontak</h2>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-location"></use>
+                </svg>
+                <span>Jl. Ahmad Yani</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-phone"></use>
+                </svg>
+                <span>0821-1232-3323</span>
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <svg>
+                  <use xlink:href="images/icon.svg#icon-mail"></use>
+                </svg>
+                <span>cs@lintas.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer__link__item download-app">
+            <h2>Download App</h2>
+            <div>
+              <div>
+                <a href="#">
+                  <img src="images/google-play.png" alt="download android" />
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="images/app-store.png" alt="download iOS" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="footer__separator" />
+        <section class="footer__copyright">
+          <p>Copyright &copy; 2019 PT. Lintas. All Rights Reserved.</p>
+        </section>
+      </div>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__wrapper">
-      <section class="footer__link">
-        <div class="footer__link__item information">
-          <h2>Informasi</h2>
-          <div><a href="#">FAQ</a></div>
-          <div><a href="#">Kode Status Pengantaran Paket</a></div>
-          <div><a href="#">Ketentuan & Kondisi</a></div>
-          <div><a href="#">Kebijakan Privasi</a></div>
-        </div>
-        <div class="footer__link__item follow-us">
-          <h2>Ikuti Kami</h2>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-facebook"></use>
-              </svg>
-              <span>Facebook</span>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-twitter"></use>
-              </svg>
-              <span>Twitter</span>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-instagram"></use>
-              </svg>
-              <span>Instagram</span>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-youtube"></use>
-              </svg>
-              <span>Youtube</span>
-            </a>
-          </div>
-        </div>
-        <div class="footer__link__item contact-info">
-          <h2>Info Kontak</h2>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-location"></use>
-              </svg>
-              <span>Jl. Ahmad Yani</span>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-phone"></use>
-              </svg>
-              <span>0821-1232-3323</span>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <svg>
-                <use xlink:href="images/icon.svg#icon-mail"></use>
-              </svg>
-              <span>cs@lintas.com</span>
-            </a>
-          </div>
-        </div>
-        <div class="footer__link__item download-app">
-          <h2>Download App</h2>
-          <div>
-            <div><a href="#">
-                <img src="images/google-play.png" alt="download android">
-              </a></div>
-            <div><a href="#">
-                <img src="images/app-store.png" alt="download iOS">
-              </a></div>
-          </div>
-        </div>
-      </section>
-      <hr class="footer__separator">
-      <section class="footer__copyright">
-        <p>Copyright &copy; 2019 PT. Lintas. All Rights Reserved.</p>
-      </section>
-    </div>
-  </footer>
-
-  <!-- SCRIPT -->
-  <script src="scripts/jquery.js"></script>
-  <script src="scripts/main.js"></script>
-
-</body>
-
+    <!-- SCRIPT -->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
